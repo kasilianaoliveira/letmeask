@@ -1,0 +1,147 @@
+#page-auth {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  aside {
+    flex: 7;
+
+    background: #835afd;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 7.5rem 5rem;
+
+    img {
+      max-width: 320px;
+    }
+    strong {
+      font: 700 2.25rem "Poppins", sans-serif;
+      line-height: 2.625rem;
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 1rem;
+      color: #f8f8f8;
+    }
+  }
+
+  main {
+    flex: 8;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    text-align: center;
+
+    max-width: 320px;
+    width: 100%;
+
+    > img {
+      align-self: center;
+    }
+
+    h2 {
+      font: 700 1.5rem "Poppins", sans-serif;
+      margin: 3.5rem 0 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        height: 3.125rem;
+        border: 1px solid #a8a8b3;
+        border-radius: 0.5rem;
+        padding: 0 1rem;
+        background: #fff;
+      }
+
+      button {
+        margin-top: 1rem;
+      }
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 0.875rem;
+
+      a {
+        display: inline-block;
+        color: #e559f9;
+      }
+    }
+  }
+
+  .create-room {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3.5rem;
+
+    font-weight: 500;
+    color: #fff;
+
+    background: #ea4335;
+    border-radius: 0.5rem;
+
+    padding: 0.9688rem 1rem;
+    transition: filter 0.2s;
+
+    img {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  .separator {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 0.875rem;
+    color: #a8a8b3;
+    margin: 32px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25%;
+      height: 1px;
+      bottom: 50%;
+      margin-right: 16px;
+      left: 0;
+      background: #a8a8b3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25%;
+      height: 1px;
+      bottom: 50%;
+      margin-left: 16px;
+      right: 0;
+      background: #a8a8b3;
+    }
+  }
+}
